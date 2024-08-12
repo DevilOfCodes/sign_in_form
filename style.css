@@ -1,0 +1,152 @@
+body{
+    background-color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.container{
+    height: fit-content;
+    background-color: white;
+    border: black;
+    border-radius: 9px;
+    border-style: solid;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px; 
+}
+
+
+.left-side{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+
+
+#email-btn{
+    width: 100%;
+    height: 8%;
+    display: flex;
+}
+
+
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+}
+.toggle-container input {
+    display: none;
+}
+.toggle-container label {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    background-color: #ccc;
+    border-radius: 34px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.toggle-container label::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+.toggle-container input:checked + label {
+    background-color: #007bff;
+}
+.toggle-container input:checked + label::before {
+    transform: translateX(26px);
+}
+.toggle-container span {
+    margin-left: 10px;
+}
+
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+
+.btn-submit{
+    background-color: #8a2be2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-submit:hover {
+    background-color: #5f12a8;
+}
+
+
+#break-part{
+    text-align: center;
+    opacity: 40%;
+
+}
+
+
+
+.btn-google {
+    background-color: #db4437;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-google:hover {
+    background-color: #c23321;
+}
+.btn-apple {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-apple:hover {
+    background-color: #333333;
+}
+.btn i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+
+#img-side{
+    width: 90%;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
